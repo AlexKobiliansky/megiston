@@ -1,0 +1,114 @@
+.main-mnu
+  padding-top: 50px
+  ul
+    display: flex
+    justify-content: space-between
+    li
+      +mt(.3s)
+      &:hover
+        color: $accent
+
+.mobile-mnu
+  display: inline-block
+  width: 80%
+  background-color: #262626
+  position: absolute
+  left: -80%
+  +mt(.5s)
+  height: 100vh
+  z-index: 3
+  padding-top: 14px
+  font-size: 20px
+  li
+    padding: 10px 0 5px
+    margin-right: 20px
+    margin-left: 20px
+    border-bottom: 1px solid rgba(#fff, .1)
+    text-align: center
+  &.on
+    height: auto
+    left: 0
+    top: 0
+    bottom: 0
+
+.mnu-logo
+  width: 140px
+  margin: 0 auto 20px auto
+
+
+
+
+//toggle-mnu
+.toggle-mnu
+  vertical-align: top
+  display: inline-block
+  width: 32px
+  height: 32px
+  margin-top: 14px
+  position: relative
+  margin-left: 10px
+  left: 0
+  background-color: $accent
+  padding: 5px
+  +mt(.5s)
+  &:hover
+    span, span:after, span:before
+      background-color: #605541
+
+
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: -6px
+
+  span:after
+    top: 6px
+
+  span
+    position: relative
+    display: block
+    top: 10px
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #605541
+    transition: all 0.3s
+    backface-visibility: hidden
+
+  span:before, span:after
+    width: 16px
+    left: 2.5px
+
+  &.on
+    span
+      left: 3px
+    span:before
+      transform: rotate(-46deg) translate(-2.5px)
+      left: -12px
+      width: 22px
+
+    span:after
+      transform: rotate(46deg) translate(-2.5px)
+      left: -12px
+      width: 22px
+  &.on
+    left: 80%
+
+  &.on span
+    width: 86%
+
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+    width: 12px
+    left: -5px
+    top: 4.5px
+
+
+
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+    width: 12px
+    top: 4.5px
+    left: -5px

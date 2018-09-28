@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-
-
+    $(".toggle-mnu").click(function() {
+        $(this).toggleClass("on");
+        $(".mobile-mnu").toggleClass("on");
+        return false;
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
