@@ -38,13 +38,27 @@ html, body
   height: 100%
 
 body
-  font-size: 16px
+  font-size: 18px
   min-width: 320px
   position: relative
-  line-height: 1.65
+  line-height: 1.5
   font-family: $default-font
   overflow-x: hidden
   opacity: 1
+  color: #fff
+  background-repeat: no-repeat
+  background-position: center center
+  background-color: $dark
+  font-weight: 700
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: $dark
+    opacity: .98
 
 a, a:hover, a:active, a:focus
   color: inherit
@@ -54,3 +68,10 @@ a, a:hover, a:active, a:focus
   display: block
   max-width: 100%
   height: auto
+
+a, input, textarea, button
+  outline: none
+
+#page-content
+  position: relative
+  z-index: 2
