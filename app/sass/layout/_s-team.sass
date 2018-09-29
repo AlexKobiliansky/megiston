@@ -1,0 +1,50 @@
+.s-team
+  margin-top: 115px
+  .section-content
+    margin-left: 0
+    margin-right: 0
+    &:after
+      display: none
+
+.team-item
+  position: relative
+  margin-bottom: 50px
+  &-img-wrap
+    width: 200px
+    display: table-cell
+    position: relative
+
+  &-img
+    width: 200px
+    height: 200px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    position: relative
+    vertical-align: top
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: $dark
+      opacity: .5
+  &-desc
+    display: table-cell
+    padding-left: 30px
+    vertical-align: top
+    padding-top: 15px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 30px
+      bottom: 0
+      width: 430px
+      height: 1px
+      background-color: $accent
+  &-name
+    padding-top: 10px
+    padding-bottom: 30px
