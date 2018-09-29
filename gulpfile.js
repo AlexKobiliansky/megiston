@@ -28,6 +28,9 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([ // берем все библиотеки
 		'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/photoswipe/photoswipe.min.js',
+        'app/libs/photoswipe/photoswipe-ui-default.min.js',
+        'app/libs/photoswipe/jquery.photoswipe.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js')) // минимизируем и соединяем в один файл

@@ -6,6 +6,8 @@ $(document).ready(function() {
         return false;
     });
 
+    $('.portfolio-wrap').photoswipe();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

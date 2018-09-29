@@ -1,0 +1,30 @@
+.s-portfolio
+  margin-top: 115px
+  padding-bottom: 85px
+  .section-content
+    padding-bottom: 0
+
+.port-item
+  margin-bottom: 30px
+  position: relative
+  cursor: pointer
+  img
+    width: 100%
+    height: auto
+    display: block
+    position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: $dark
+    opacity: .5
+    +mt(.3s)
+    z-index: 2
+  &:hover
+    &:before
+      z-index: 0
+      opacity: 0
