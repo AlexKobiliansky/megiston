@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    setTimeout(function(){
+        $('.preloader').fadeOut();
+    }, 500);
+
     $(".toggle-mnu").click(function() {
         $(this).toggleClass("on");
         $(".mobile-mnu").toggleClass("on");

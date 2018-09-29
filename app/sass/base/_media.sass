@@ -10,6 +10,11 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 
+  .contacts-items-wrap
+    display: inline-block
+    vertical-align: top
+    padding-right: 60px
+
   .s-investors
     .section-content
       padding-bottom: 0
@@ -30,6 +35,21 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+  .contacts-items-wrap
+    margin-top: 0
+    padding-right: 0
+    padding-left: 40px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 60px
+    display: block
+    width: auto
+    max-width: 320px
+    //text-align: center
+
+  #map
+    width: 100%
+    margin-left: 0
 
   .page-title
     margin-left: auto
@@ -53,6 +73,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+  .contact-item-desc
+    font-size: 18px
+    line-height: 24px
 
   .port-item
     width: 100%
