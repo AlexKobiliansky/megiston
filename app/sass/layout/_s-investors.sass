@@ -31,10 +31,17 @@
   margin-top: 20px
   margin-bottom: 25px
   +mt(.3s)
+  filter: none
   &:hover
     background-color: $accent
     border-color: #685935
     color: #685935
+  &.inactive
+    background-color: $accent
+    border-color: #685935
+    color: #685935
+    filter: grayscale(.6)
+
 
 .agreement
   position: absolute
