@@ -101,6 +101,59 @@ a, input, textarea, button
   padding-bottom: 80px
 
 
+
+.logo-wrap
+  position: relative
+  z-index: 2
+  overflow: hidden
+  display: inline-block
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    width: 90px
+    height: 300%
+    background-color: #fff
+    top: -200%
+    left: 0
+    transform: rotate(45deg)
+    opacity: .1
+    z-index: 3
+    animation-iteration-count: 1
+    animation-duration: 2s
+  &:hover
+    &:before
+      animation-name: sunny-bunny
+
+.logo-wrap-mid
+  position: relative
+  z-index: 2
+  overflow: hidden
+  display: inline-block
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    width: 50px
+    height: 300%
+    background-color: #fff
+    top: -200%
+    left: 0
+    transform: rotate(45deg)
+    opacity: .1
+    z-index: 3
+    animation-iteration-count: 1
+    animation-duration: 2s
+  &:hover
+    &:before
+      animation-name: sunny-bunny
+
+@keyframes sunny-bunny
+  to
+    left: 140%
+    top: 200%
+
+//preloader styles
 .preloader
   position: fixed
   top: 0
@@ -115,7 +168,6 @@ a, input, textarea, button
   align-items: center
   background-color: #262626
 
-
 #cube-loader
   align-items: center
   display: flex
@@ -124,7 +176,6 @@ a, input, textarea, button
   position: fixed
   & .caption
     margin: 0 auto
-
   .cube-loader
     width: 73px
     height: 73px
@@ -132,7 +183,6 @@ a, input, textarea, button
     margin-top: 49px
     position: relative
     transform: rotateZ(45deg)
-
     & .cube
       position: relative
       transform: rotateZ(45deg)
@@ -140,7 +190,6 @@ a, input, textarea, button
       height: 50%
       float: left
       transform: scale(1.1)
-
     & .cube:before
       content: ""
       position: absolute
@@ -151,22 +200,16 @@ a, input, textarea, button
       background-color: $accent
       animation: cube-loader 2.76s infinite linear both
       transform-origin: 100% 100%
-
     & .loader-2
       transform: scale(1.1) rotateZ(90deg)
-
     & .loader-3
       transform: scale(1.1) rotateZ(180deg)
-
     & .loader-4
       transform: scale(1.1) rotateZ(270deg)
-
     & .loader-2:before
       animation-delay: 0.35s
-
     & .loader-3:before
       animation-delay: 0.69s
-
     & .loader-4:before
       animation-delay: 1.04s
 
@@ -174,11 +217,10 @@ a, input, textarea, button
   0%, 10%
     transform: perspective(136px) rotateX(-180deg)
     opacity: 0
-
   25%, 75%
     transform: perspective(136px) rotateX(0deg)
     opacity: 1
-
   90%, 100%
     transform: perspective(136px) rotateY(180deg)
     opacity: 0
+//end preloader styles

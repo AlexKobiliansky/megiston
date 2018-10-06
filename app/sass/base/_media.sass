@@ -4,7 +4,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  body
+    background-size: cover
 
 
 /* Medium Devices, Desktops */
@@ -73,6 +74,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+  .logo-wrap:before, .logo-wrap-mid:before
+    display: none
+
 
   .contact-item-desc
     font-size: 18px
