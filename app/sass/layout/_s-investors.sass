@@ -13,29 +13,29 @@
   input[type=text], input[type=email]
     width: 100%
     background-color: transparent
-    border: 1px solid #685935
+    border: 1px solid darken($accent, 15%)
     line-height: 1
     padding: 25px
-    color: #e1dad3!important
+    color: #ccc!important
 
 .btn-form
   display: block
   width: 100%
   background-color: transparent
-  border: 1px solid $accent
+  border: 1px solid darken($accent, 15%)
   font-size: 16px
   line-height: 1
   padding: 25px
   text-align: center
-  color: $accent
+  color: #ccc
   margin-top: 20px
   margin-bottom: 25px
   +mt(.3s)
   filter: none
   &:hover
-    background-color: $accent
-    border-color: #685935
-    color: #685935
+    background-color: darken($accent, 15%)
+    border-color: darken($accent, 15%)
+    color: #ccc
   &.inactive
     background-color: $accent
     border-color: #685935
@@ -64,7 +64,7 @@
       background: transparent
       z-index: 2
       +mt(.3s)
-      border: 1px solid #685935
+      border: 1px solid darken($accent, 15%)
     &:after
       content: ''
       width: 20px

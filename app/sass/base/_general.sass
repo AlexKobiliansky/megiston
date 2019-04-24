@@ -10,21 +10,21 @@
     box-sizing: border-box
 
 *::-webkit-input-placeholder
-  color: #e1dad3
+  color: #ccc
   opacity: 1
 
 *:-moz-placeholder
-  color: #e1dad3
+  color: #ccc
   opacity: 1
 
 
 
 *::-moz-placeholder
-  color: #e1dad3
+  color: #ccc
   opacity: 1
 
 *:-ms-input-placeholder
-  color: #e1dad3
+  color: #ccc
   opacity: 1
 
 body input:focus:required:invalid,
@@ -62,7 +62,7 @@ body
     right: 0
     top: 0
     bottom: 0
-    background-color: $dark
+    background-color: lighten($dark, 5%)
     opacity: .98
 
 a, a:hover, a:active, a:focus
@@ -224,3 +224,11 @@ a, input, textarea, button
     transform: perspective(136px) rotateY(180deg)
     opacity: 0
 //end preloader styles
+
+
+.section-content
+  a
+    color: $accent
+    +mt(.3s)
+    &:hover
+      text-decoration: underline

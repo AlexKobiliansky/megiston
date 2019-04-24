@@ -2,11 +2,26 @@ $(document).ready(function() {
     
     $(".toggle-mnu").click(function() {
         $(this).toggleClass("on");
-        $(".mobile-mnu").toggleClass("on");
+        $(".mobile-mnu").toggleClass("on").find('li').removeClass('rolled').find('ul').css('display', 'none');
+
         return false;
     });
 
-    $('.portfolio-wrap').photoswipe();
+        $('.portfolio-wrap').photoswipe();
+
+    $('.main-mnu li').each(function(){
+       if($(this).find('ul').length > 0) {$(this).addClass('has-childs');}
+    });
+
+    $('.mobile-mnu li').each(function(){
+        if($(this).find('ul').length > 0) {$(this).addClass('has-childs');}
+    });
+
+    $('.mobile-mnu li.has-childs').on('click', function(e){
+        // e.preventDefault();
+        $(this).toggleClass('rolled');
+        $(this).find('ul').slideToggle();
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change

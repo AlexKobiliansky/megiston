@@ -7,9 +7,18 @@
   body
     background-size: cover
 
+  .team-item-desc:after
+    width: 100%
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+
+  .page-title
+    font-size: 52px
+
+  .section-content
+    margin: 0
 
   .contacts-items-wrap
     display: inline-block
@@ -75,6 +84,16 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
+  .s-about
+    .section-content
+      margin: 0
+
+  .fond-content
+    .team-item-name
+      font-size: 18px
+    .team-item-desc
+      font-size: 14px
+
   .logo-wrap:before, .logo-wrap-mid:before
     display: none
 
@@ -109,7 +128,7 @@
   .section-content
     margin-left: -15px
     margin-right: -15px
-    font-size: 16px
+    font-size: 14px
     line-height: 1.7
     text-align: justify
     &:after
@@ -152,7 +171,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+  .toggle-mnu.on
+    left: 89%
 
 
 /* Medium Devices, Desktops */
