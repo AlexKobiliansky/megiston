@@ -54,7 +54,6 @@ body
   //height: auto
   //min-height: 100%
   background-size: 200%
-
   &:after
     content: ''
     position: absolute
@@ -62,7 +61,8 @@ body
     right: 0
     top: 0
     bottom: 0
-    background-color: lighten($dark, 5%)
+    //background-color: lighten($dark, 5%)
+    background-color: darken(#333, 2%)
     opacity: .98
 
 a, a:hover, a:active, a:focus
@@ -99,7 +99,7 @@ a, input, textarea, button
   line-height: 2
   position: relative
   padding-bottom: 80px
-
+  min-height: 100vh
 
 
 .logo-wrap
